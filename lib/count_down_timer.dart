@@ -29,6 +29,7 @@ class CountDownTimerState extends State<CountDownTimer> {
       timer.cancel();
       return;
     }
+
     setState(() {
       _timeRemaining = _timeRemaining - widget.tickInterval;
     });
